@@ -17,6 +17,16 @@ objectives:
       - criteria:
           - "<=800"
     weight: 1
+  - sli: "response_addtocart"
+    key_sli: true
+    pass:
+      - criteria:
+        - "<=+5%" #no more than 5% higher than previous test run
+        - "<600"
+    warning:
+      - criteria:
+          - "<=+10%"
+          - "<=900"
 total_score:
   pass: "90%"
   warning: "75%"
