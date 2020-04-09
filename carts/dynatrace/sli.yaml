@@ -7,3 +7,7 @@ indicators:
   response_time_p90: "builtin:service.response.time:merge(0):percentile(90)?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
   response_time_p95: "builtin:service.response.time:merge(0):percentile(95)?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
   response_addtocart: "metricSelector=calc:service.responsetime_carts_addtocart:merge(0):sum&entitySelector=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE)),tag(keptn_service:$SERVICE),type(SERVICE)"
+  process_cpu_usage: "metricSelector=builtin:tech.generic.cpu.usage:merge(0):sum&entitySelector=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE)),tag(keptn_service:$SERVICE),type(PROCESS_GROUP_INSTANCE)"
+  childDbCalls: "metricSelector=builtin:service.dbChildCallCount:merge(0):sum&entitySelector=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE)),tag(keptn_service:$SERVICE),type(SERVICE)"
+
+  
