@@ -27,14 +27,14 @@ objectives:
       - criteria:
           - "<=+10%"
           - "<=900"
-   - sli: "childDbCalls":
-     key_sli: false
-     pass: 
-      - criteria:
-          - "<=+5%"
-     warning:
-      - criteria:
-          - "<=10%"
+  - sli: "childDbCalls":
+    key_sli: false
+    pass: 
+     - criteria:
+         - "<=+5%"
+    warning:
+     - criteria:
+         - "<=10%"
 total_score:
   pass: "90%"
   warning: "75%"
