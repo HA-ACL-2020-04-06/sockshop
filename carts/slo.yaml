@@ -27,7 +27,7 @@ objectives:
       - criteria:
           - "<=+10%"
           - "<=900"
-  - sli: "childDbCalls":
+  - sli: "childDbCalls"
     key_sli: false
     pass: 
      - criteria:
